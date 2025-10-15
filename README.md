@@ -1,6 +1,6 @@
 # ✨ ToDo Bliss — Minimal, Fast & Beautiful Task Manager
 
-A sleek, modern **To-Do Web App** built with pure **HTML, CSS, and JavaScript** — no frameworks, no fuss.  
+A sleek, modern **To-Do Web App** built with pure **HTML, CSS, and JavaScript**.  
 Stay organized, stay focused, and get things done in style. ✅
 
 ---
