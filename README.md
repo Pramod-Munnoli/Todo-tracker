@@ -16,11 +16,8 @@ Stay organized, stay focused, and get things done in style. ✅
 
 ---
 
-## 🖼️ Preview
-
-![Todo App Screenshot](https://pramod-munnoli.github.io/Todo-tracker/)
-
-*(You can replace the image above with an actual screenshot once you upload one!)*
+## 🌐 Live Demo
+[Click here to view the website](https://pramod-munnoli.github.io/Todo-tracker/)
 
 ---
 
