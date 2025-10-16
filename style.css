@@ -1,4 +1,4 @@
-       * {
+* {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -288,17 +288,28 @@
             color: var(--danger-color);
             padding: 5px;
             border-radius: 50%;
-            transition: var(--transition-fast);
         }
 
         .taskItem:hover .delete-icon {
             opacity: 1;
         }
 
-        .delete-icon:hover {
-            color: var(--white);
-            background: var(--danger-color);
-            transform: scale(1.1);
+        @media screen and (max-width: 768px) {
+            .delete-icon {
+                position: absolute;
+                right: 15px;
+                opacity: 1 !important;
+                visibility: visible !important;
+                display: block !important;
+            }
+
+            .taskItem {
+                padding-right: 45px !important; /* Ensure there's space for the delete icon */
+            }
+            
+            .taskItem:hover .delete-icon {
+                opacity: 1;
+            }
         }
 
         /* Scrollbar styling */
@@ -384,4 +395,86 @@
             #taskList h3 {
                 font-size: 1.25rem;
             }
-        } 
+        }
+
+        @media screen and (max-width: 768px) {
+    .container {
+        margin: 0.5rem;
+        padding: 1.5rem;
+        width: 95%;
+    }
+
+    .container h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .input-row {
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    #taskInput {
+        width: 100%;
+        padding: 0.75rem 1rem;
+    }
+
+    .Buttons {
+        width: 100%;
+        padding: 0.75rem;
+    }
+
+    .taskItem {
+        padding: 0.75rem 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .delete-icon {
+        opacity: 1;
+        position: absolute;
+        right: 10px;
+    }
+
+    #taskList h3 {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 1rem;
+        margin: 0.25rem;
+    }
+
+    .container h1 {
+        font-size: 1.75rem;
+    }
+
+    .taskItem label {
+        font-size: 0.9rem;
+    }
+
+    #taskInput {
+        font-size: 0.9rem;
+    }
+
+    .Buttons {
+        font-size: 0.9rem;
+    }
+
+    #tasklist {
+        max-height: 350px;
+    }
+}
+
+/* Add smooth scrolling for better mobile experience */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Improve touch targets for mobile */
+.taskItem input[type="checkbox"] {
+    min-width: 24px;
+    min-height: 24px;
+}
